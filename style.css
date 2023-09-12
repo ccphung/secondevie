@@ -1,4 +1,51 @@
-h1 {
+body {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.orangeColor{
+    color :#FF5510;
+}
+
+a {
+    text-decoration : none;
+    }
+
+
+a:hover {
+   background : #FF5510;
+   letter-spacing: 3px;
+   transition: 0.5s;
+}
+
+.logo-img {
+    max-width : 10vw;
+}
+
+.intro {
+    border: 2px solid #FF5510;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+}
+
+img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.container-dogs {
+    display : grid;
+    grid-template-columns: 1fr;
+    gap : 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.box-style {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

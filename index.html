@@ -14,55 +14,92 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-start align-items-center">
+                <div class="col-4 col-sm-3 col-md-2 col-lg-2">
                     <div class="logo">
                         <img src="./images/logo.png" alt="logo_seconde_vie" class="logo-img">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-8">
                     <h1 class="logo-title">
-                        <span>Seconde</span>
-                        <span class="orangeColor">Vie</span>
+                            <span>Seconde</span>
+                            <span class="orangeColor">Vie</span>
                     </h1>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col">
-                    <div class="intro">
-                        L’adoption responsable change autant la vie de l’animal que la vôtre.
+                    <div class="intro text-center">
+                        L’adoption responsable change autant la vie de l’animal que la vôtre. <br/>
+                        ATTENTION, PRÉALABLEMENT À L’ADOPTION D’UN ANIMAL, VOUS DEVEZ SIGNER UN
+                        CERTIFICAT D’ENGAGEMENT ET DE CONNAISSANCE DES BESOINS SPÉCIFIQUES DE L’ESPÈCE.
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div class="menu">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <a href="#"><h5 class="text-white h4 text-center">Chiens</h5></a>
-                    <a href="#"><h5 class="text-white h4 text-center">Chats</h5></a>
-                    <a href="#"><h5 class="text-white h4 text-center">Actualités</h5></a>
-                </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-2">
+            <div class="container-fluid">
+              <div class="navbar-brand text-white">Menu</div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-center" aria-current="page" href="#">Actualités</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="#">Chiens</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="#">Chats</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <div class="container-fluid d-flex justify-content-center align-items-center">
-                  <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-            </nav>
-        </div>
-
+          </nav>
     </header>
+
     <main>
-        <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+        <section class="dogs">
+            <h3 class="text-center mt-2">Les chiens</h3>
+                <div class="container-dogs">
+                <article class="box-style">
+                    <img src="./images/dog1.jpg" alt="dog">
+                    <p class="text-center">Rudy - Mâle - 4 ans</p>
+
+                </article>
+                <article class="box-style">
+                    <img src="./images/dog2.jpg" alt="dog">
+                    <p class="text-center">Clarisse - Femelle - 6 ans</p>
+                </article>
+                <article class="box-style">
+                    <img src="./images/dog3.jpg" alt="dog">
+                    <p class="text-center">Tom - Mâle - 2 ans</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="chat">
+            <h3 class="text-center mt-2">Les chiens</h3>
+                <div class="container-dogs">
+                <article class="box-style">
+                    <img src="./images/cat1.jpg" alt="cat">
+                    <p class="text-center">Rudy - Mâle - 4 ans</p>
+
+                </article>
+                <article class="box-style">
+                    <img src="./images/cat2.jpg" alt="cat">
+                    <p class="text-center">Clarisse - Femelle - 6 ans</p>
+                </article>
+                <article class="box-style">
+                    <img src="./images/cat4.jpg" alt="cat">
+                    <p class="text-center">Tom - Mâle - 2 ans</p>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
