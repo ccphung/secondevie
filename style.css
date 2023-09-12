@@ -3,6 +3,10 @@ body {
     letter-spacing: 2px;
 }
 
+body ::selection {
+    color: #FF5510;
+}
+
 h1, h3 {
     font-size: 3em;
 }
@@ -35,6 +39,7 @@ a:hover, .box-style:hover {
     border-radius: 10px;
     padding: 2px;
     margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .animal-img {
@@ -49,7 +54,6 @@ a:hover, .box-style:hover {
     justify-items: center;
     align-items: center;
 }
-
 
 .box-style {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
