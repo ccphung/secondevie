@@ -3,8 +3,12 @@ body {
     letter-spacing: 2px;
 }
 
-h1 {
-    font-size: 2em;
+h1, h3 {
+    font-size: 3em;
+}
+
+.slogan {
+    font-size: 1rem;
 }
 
 .orangeColor{
@@ -16,7 +20,7 @@ a {
     }
 
 
-a:hover {
+a:hover, .box-style:hover {
    background : #FF5510;
    letter-spacing: 3px;
    transition: 0.5s;
@@ -33,12 +37,12 @@ a:hover {
     margin: 5px;
 }
 
-img {
+.animal-img {
     max-width: 200px;
     max-height: 200px;
 }
 
-.container-dogs {
+.container-animals {
     display : grid;
     grid-template-columns: 1fr;
     gap : 10px;
@@ -46,6 +50,43 @@ img {
     align-items: center;
 }
 
+
 .box-style {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background : #FF5510;
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.social-img {
+    height: 1em;
+    padding: 2px;
+}
+
+@media (min-height: 481px){
+    .container-animals{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .animal-img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+@media (min-height: 769px){
+    .animal-img {
+        max-width: 500px;
+        max-height: 500px;
+    }
 }
