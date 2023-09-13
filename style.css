@@ -1,21 +1,26 @@
 body {
     font-family: 'Bebas Neue', sans-serif;
-    letter-spacing: 2px;
 }
 
 body ::selection {
     color: #FF5510;
 }
 
-h1, h3 {
+h1, h3, h2 {
     font-size: 3em;
+    letter-spacing: 2px;
+}
+
+h5 {
+    font-size: 2em;
+    letter-spacing: 2px;
 }
 
 .slogan {
     font-size: 1rem;
 }
 
-.orangeColor{
+.orange-color{
     color :#FF5510;
 }
 
@@ -40,6 +45,7 @@ a:hover, .box-style:hover {
     padding: 2px;
     margin: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
 }
 
 .animal-img {
@@ -92,5 +98,36 @@ a:hover, .box-style:hover {
     .animal-img {
         max-width: 500px;
         max-height: 500px;
+    }
+}
+.display-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.program {
+    font-size: 1.5em;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+@media (max-height: 481px) {
+    .hidden-img {
+        display:none
+    }
+
+    .program {
+        border: 2px solid #FF5510;
+        padding: 4px;
+    }
+}
+
+@media (min-height: 1201px) {
+    .display-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
