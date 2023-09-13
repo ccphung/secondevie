@@ -1,5 +1,6 @@
 body {
     font-family: 'Bebas Neue', sans-serif;
+    height:100%;
 }
 
 body ::selection {
@@ -129,5 +130,11 @@ a:hover, .box-style:hover {
     .display-grid {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
+        gap : 50px;
+    }
+    
+    .display-flex {
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
     }
 }
+
